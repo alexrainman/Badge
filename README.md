@@ -36,7 +36,7 @@ The plugin support these:
 <!--for apex-->
 <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT"/>
 
-<!-- for android -->
+<!-- default -->
 <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
 <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/>
 <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
