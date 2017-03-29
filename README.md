@@ -13,7 +13,7 @@
 * Windows Phone 8.1 RT
 * Windows Store 8.0+
 
-Android doesn't supports app icon badge by default but third party manufacturers launchers do. Also, notification badge doesn't works in all manufacturers.
+Android doesn't supports app icon badge by default neither notification badge works, but third party manufacturers launchers do.
 
 The plugin support these:
 
@@ -29,6 +29,31 @@ The plugin support these:
 * Sony
 * Xiaomi
 * Zuk
+
+**Android permissions**
+
+```xml
+<!--for apex-->
+<uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT"/>
+
+<!-- for android -->
+<uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+<uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/>
+<uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+<uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+
+<!-- HTC -->
+<uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+<uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> 
+
+<!-- Samsung -->
+<uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+<uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" />
+
+<!-- Sony -->
+<uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+<uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" />
+```
 
 ### API Usage
 
