@@ -1,7 +1,7 @@
-Badge Plugin for Xamarin and Windows
+# Badge Plugin for Xamarin and Windows
 
 ### Setup
-* Available on NuGet: https://www.nuget.org/packages/Xamarin.Badge.Plugin/ [![NuGet](https://img.shields.io/nuget/v/badge.svg?label=NuGet)](https://www.nuget.org/packages/Xamarin.Badge.Plugin/)
+* Available on NuGet: https://www.nuget.org/packages/Xamarin.Badge.Plugin/ [![NuGet](https://img.shields.io/nuget/v/Xamarin.Badge.Plugin.svg?label=NuGet)](https://www.nuget.org/packages/Xamarin.Badge.Plugin/)
 * Install into your PCL project and Client projects.
 
 **Supports**
