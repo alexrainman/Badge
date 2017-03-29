@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>Xamarin.Badge.Plugin</id>
+        <version>1.0.0</version>
+        <title>Badge Plugin for Xamarin and Windows</title>
+        <authors>Alex Rainman</authors>
+        <owners>Alex Rainman</owners>
+        <licenseUrl>https://github.com/alexrainman/badge/blob/master/README.md</licenseUrl>
+        <projectUrl>https://github.com/alexrainman/badge</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Standard API to set icon badge.</description>
+        <summary>Badge Plugin for Xamarin and Windows</summary>
+        <releaseNotes>
+        1.0.0
+        [Release] Badge plugin for Xamarin and Windows. Includes support for multiple Android OEM.
+        </releaseNotes>
+        <tags>xamarin badge plugin ios android uwp wp81 winstore xamarin forms monotouch monodroid</tags>
+        <dependencies>
+            <group targetFramework="MonoAndroid10">
+	            <dependency id="Plugin.CurrentActivity" version="1.0.1"/>
+	        </group>
+	        <group targetFramework="Xamarin.iOS10">
+	        </group>
+	        <group targetFramework="UAP10">
+	        </group>
+	        <group targetFramework="wp8">
+	        </group>
+	        <group targetFramework="wpa81">
+	        </group>
+	        <group targetFramework="win8">
+	        </group>
+        </dependencies>
+    </metadata>
+    <files>
+        <!-- PCL -->
+        <file src="lib/Plugin.Badge.Abstractions.dll" target="lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+Xamarin.iOS10/Plugin.Badge.Abstractions.dll" />
+        <file src="lib/Plugin.Badge.dll" target="lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+Xamarin.iOS10/Plugin.Badge.dll" />
+
+        <!-- Xamarin.iOS (Unified)-->
+        <file src="lib/Plugin.Badge.Abstractions.dll" target="lib/Xamarin.iOS10/Plugin.Badge.Abstractions.dll" />
+        <file src="lib/iOS/Plugin.Badge.dll" target="lib/Xamarin.iOS10/Plugin.Badge.dll" />
+
+        <!-- Xamarin.Android -->
+        <file src="lib/Plugin.Badge.Abstractions.dll" target="lib/MonoAndroid/Plugin.Badge.Abstractions.dll" />
+        <file src="lib/Android/Plugin.Badge.dll" target="lib/MonoAndroid/Plugin.Badge.dll" />
+
+        <!-- UWP -->
+        <file src="lib/Plugin.Badge.Abstractions.dll" target="lib/UAP10/Plugin.Badge.Abstractions.dll" />
+        <file src="lib/UWP/Plugin.Badge.dll" target="lib/UAP10/Plugin.Badge.dll" />
+        <file src="lib/UWP/Plugin.Badge.dll" target="lib/UAP10/Plugin.Badge.pri" />
+
+        <!-- WP8 -->
+        <file src="lib/Plugin.Badge.Abstractions.dll" target="lib/wp8/Plugin.Badge.Abstractions.dll" />
+        <file src="lib/WP8/Plugin.Badge.dll" target="lib/wp8/Plugin.Badge.dll" />
+
+        <!-- UP81 -->
+        <file src="lib/Plugin.Badge.Abstractions.dll" target="lib/wpa81/Plugin.Badge.Abstractions.dll" />
+        <file src="lib/WP81/Plugin.Badge.dll" target="lib/wpa81/Plugin.Badge.dll" />
+        <file src="lib/WP81/Plugin.Badge.dll" target="lib/wpa81/Plugin.Badge.pri" />
+
+        <!-- WS -->
+        <file src="lib/Plugin.Badge.Abstractions.dll" target="lib/win8/Plugin.Badge.Abstractions.dll" />
+        <file src="lib/WS/Plugin.Badge.dll" target="lib/win8/Plugin.Badge.dll" />
+        <file src="lib/WS/Plugin.Badge.dll" target="lib/win8/Plugin.Badge.pri" />
+    </files>
+</package>
