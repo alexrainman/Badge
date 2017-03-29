@@ -33,10 +33,10 @@ The plugin support these:
 **Android permissions**
 
 ```xml
-<!--for apex-->
+<!-- Apex -->
 <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT"/>
 
-<!-- default -->
+<!-- Default -->
 <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
 <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/>
 <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
