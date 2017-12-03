@@ -29,9 +29,11 @@ namespace Plugin.Badge
     static IBadge CreateBadge()
     {
 #if PORTABLE
-        return null;
+            return null;
+#elif NETSTANDARD1_4
+            return null;
 #else
-        return new BadgeImplementation();
+            return new BadgeImplementation();
 #endif
     }
 

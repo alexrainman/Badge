@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>Xamarin.Badge.Plugin</id>
-        <version>1.0.0</version>
+        <version>2.0.0</version>
         <title>Badge Plugin for Xamarin and Windows</title>
         <authors>Alex Rainman</authors>
         <owners>Alex Rainman</owners>
@@ -12,6 +12,8 @@
         <description>Standard API to set icon badge.</description>
         <summary>Badge Plugin for Xamarin and Windows</summary>
         <releaseNotes>
+        2.0.0
+        [Update] Adding support for Net Standard 1.4
         1.0.0
         [Release] Badge plugin for Xamarin and Windows. Includes support for multiple Android OEM.
         </releaseNotes>
@@ -33,6 +35,10 @@
         </dependencies>
     </metadata>
     <files>
+        <!-- NetStandard -->
+        <file src="lib/Plugin.Badge.Abstractions.dll" target="lib/netstandard1.4/Plugin.Badge.Abstractions.dll" />
+        <file src="lib/Plugin.Badge.dll" target="lib/netstandard1.4/Plugin.Badge.dll" />
+
         <!-- PCL -->
         <file src="lib/Plugin.Badge.Abstractions.dll" target="lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+Xamarin.iOS10/Plugin.Badge.Abstractions.dll" />
         <file src="lib/Plugin.Badge.dll" target="lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+Xamarin.iOS10/Plugin.Badge.dll" />
@@ -49,19 +55,5 @@
         <file src="lib/Plugin.Badge.Abstractions.dll" target="lib/UAP10/Plugin.Badge.Abstractions.dll" />
         <file src="lib/UWP/Plugin.Badge.dll" target="lib/UAP10/Plugin.Badge.dll" />
         <file src="lib/UWP/Plugin.Badge.dll" target="lib/UAP10/Plugin.Badge.pri" />
-
-        <!-- WP8 -->
-        <file src="lib/Plugin.Badge.Abstractions.dll" target="lib/wp8/Plugin.Badge.Abstractions.dll" />
-        <file src="lib/WP8/Plugin.Badge.dll" target="lib/wp8/Plugin.Badge.dll" />
-
-        <!-- UP81 -->
-        <file src="lib/Plugin.Badge.Abstractions.dll" target="lib/wpa81/Plugin.Badge.Abstractions.dll" />
-        <file src="lib/WP81/Plugin.Badge.dll" target="lib/wpa81/Plugin.Badge.dll" />
-        <file src="lib/WP81/Plugin.Badge.dll" target="lib/wpa81/Plugin.Badge.pri" />
-
-        <!-- WS -->
-        <file src="lib/Plugin.Badge.Abstractions.dll" target="lib/win8/Plugin.Badge.Abstractions.dll" />
-        <file src="lib/WS/Plugin.Badge.dll" target="lib/win8/Plugin.Badge.dll" />
-        <file src="lib/WS/Plugin.Badge.dll" target="lib/win8/Plugin.Badge.pri" />
     </files>
 </package>

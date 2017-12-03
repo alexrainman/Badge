@@ -16,7 +16,7 @@
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
     <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
     <DevInstrumentationEnabled>True</DevInstrumentationEnabled>
-    <TargetFrameworkVersion>v7.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
     <AndroidTlsProvider>
     </AndroidTlsProvider>
     <ReleaseVersion>1.0.0</ReleaseVersion>
@@ -77,7 +77,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Plugin.Badge.Abstractions\Plugin.Badge.Abstractions.csproj">
-      <Project>{6edb0588-ffc5-4ef5-8a99-9e241d0f878d}</Project>
+      <Project>{27F5F614-3609-4847-AA36-9F4CF78B1FAF}</Project>
       <Name>Plugin.Badge.Abstractions</Name>
     </ProjectReference>
   </ItemGroup>

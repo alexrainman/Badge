@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>Demo.Droid</RootNamespace>
     <AssemblyName>Demo.Droid</AssemblyName>
-    <TargetFrameworkVersion>v7.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
     <AndroidApplication>True</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
     <AndroidResgenClass>Resource</AndroidResgenClass>
@@ -103,13 +103,13 @@
     <Folder Include="Resources\drawable\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Badge\Plugin.Badge.Abstractions\Plugin.Badge.Abstractions.csproj">
-      <Project>{6EDB0588-FFC5-4EF5-8A99-9E241D0F878D}</Project>
-      <Name>Plugin.Badge.Abstractions</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Badge\Plugin.Badge.Android\Plugin.Badge.Android.csproj">
       <Project>{56A56F17-7DE1-4CA1-9617-BF32E971AC84}</Project>
       <Name>Plugin.Badge.Android</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Badge\Plugin.Badge.Abstractions\Plugin.Badge.Abstractions.csproj">
+      <Project>{27F5F614-3609-4847-AA36-9F4CF78B1FAF}</Project>
+      <Name>Plugin.Badge.Abstractions</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
